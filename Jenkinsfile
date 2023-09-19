@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'node:18' // Use an official Node.js image
+            image 'node:latest' // Use an official Node.js image
             args '-p 3000:3000' // Map the port inside the container to the host
         }
     }
